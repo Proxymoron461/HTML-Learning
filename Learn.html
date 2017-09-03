@@ -100,5 +100,72 @@
     </figure>
     <p>This image uses the HTML5 figure and figcaption tags to put the image with its' caption.</p>
 
+    <p><hr /></p>
+
+    <!-- section on tables, and what tags to use with them -->
+    <h2>You can create tables containing useful information within.</h2>
+    <table>
+      <tr>
+        <td>This</td>
+        <td>table</td>
+        <td>uses</td>
+      </tr>
+      <tr>
+        <td>row</td>
+        <td>and</td>
+        <td>data</td>
+      </tr>
+      <tr>
+        <td>tags</td>
+        <td>for</td>
+        <td>creation</td>
+      </tr>
+    </table>
+    <br />
+    <table>
+      <tr>
+        <th></th>
+        <th scope="col">Column heading</th>
+      </tr>
+      <tr>
+        <th scope="row">Row heading</th>
+        <td>Info goes here</td>
+      </tr>
+    </table>
+    <br />
+    <table>
+      <tr>
+        <td colspan="2">Cheese</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Cheese</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+    <p>The above table uses the rowspan and colspan attributes to make the
+       individual cells go across multiple columns or rows.</p>
+    <br />
+    <table>
+      <thead>
+        <th scope="col">Name</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Brie</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Therefore, cheese</td>
+        </tr>
+      </tfoot>
+    </table>
+    <p>The above table uses the thead, tbody and tfoot tags to signify the head,
+       main body and end of the table - useful for long tables.</p>
+
   </body>
 </html>
