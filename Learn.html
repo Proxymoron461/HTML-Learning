@@ -167,5 +167,76 @@
     <p>The above table uses the thead, tbody and tfoot tags to signify the head,
        main body and end of the table - useful for long tables.</p>
 
+    <p><hr /></p>
+
+    <!-- section on forms, how to make them and what tags to use -->
+    <h2>You can also easily create web forms within HTML.</h2>
+    <form action="http://www.example.com/form.php" method="post">
+      <p>Insert a type of cheese:
+        <input type="text" name="cheese" maxlength="30" />
+      </p>
+      <p>Insert a secret type of cheese:
+        <input type="password" name="secretcheese" maxlength="30" />
+      </p>
+      <textarea name="cheesecomments">Insert all comments about cheese...</textarea>
+      <p>Please select your favourite cheese (only one):
+        <br />
+        <input type="radio" name="cheesebutton" value="brie" />Brie
+        <input type="radio" name="cheesebutton" value="cheddar" /> Cheddar
+      </p>
+      <p>Please select your multiple favourite cheeses:
+        <br />
+        <input type="checkbox" name="cheesecheckbox" value="brie" />Brie
+        <input type="checkbox" name="cheesecheckbox" value="cheddar" />Cheddar
+      </p>
+      <p>Please select your single favourite cheese:
+        <br />
+        <select name="cheeses">
+          <option value="brie">Brie</option>
+          <option value="cheddar">Cheddar</option>
+        </select>
+      </p>
+      <p>Please select your multiple favourite cheeses (using ctrl or cmd):
+        <br />
+        <select name="multiplecheeses" multiple="multiple">
+          <option value="brie">Brie</option>
+          <option value="cheddar">Cheddar</option>
+        </select>
+      </p>
+      <p>Upload your favourite cheesy picture here:
+        <br />
+        <input type="file" name="cheesypic" />
+        <br />
+        <input type="submit" value="Upload" />
+      </p>
+      <p>These forms use the label tag for accessibility:
+        <br />
+        <input id="female" type="radio" name="sex" value="f">
+        <label for="female">Female</label>
+        <label><input id="male" type="radio" name="sex" value="m" />Male</label>
+      </p>
+      <p>These forms are grouped together and named, using fieldset and legend:
+        <fieldset>
+          <legend>Contact details</legend>
+          <label>Email:<br />
+          <input type="text" name="email" /></label>
+        </fieldset>
+      </p>
+      <p>You can use the HTML5 required tag to ensure fields aren't left blank, as well as placeholder text:
+        <br />
+        <label>Email:<input type="text" name="email" required="required" /></label>
+      </p>
+      <p>HTML5 also contains a number of tags for various input fields:
+        <br />
+        <label>Enter date: <input type="date" name="date" /></label>
+        <br />
+        <label>Enter email: <input type="email" name="email" placeholder="example@email.com"/></label>
+        <br />
+        <label>Enter URL: <input type="url" name="url" placeholder="http://www.example.com"/></label>
+        <br />
+        <label>Enter search term: <input type="search" name="search" placeholder="Enter term here..." /></label>
+      </p>
+    </form>
+
   </body>
 </html>
