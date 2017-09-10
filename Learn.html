@@ -1,9 +1,17 @@
+<!-- signify the doctype -->
+<!DOCTYPE html>
 <!-- signify the start of the HTML code -->
 <html>
 
   <!-- display a title on the browser window -->
   <head>
     <title>My webpage title</title>
+    <meta name="description"
+      content="An example webpage made to show off." />
+    <meta name="author"
+      content="Toby Bailey" />
+    <meta name="robots"
+      content="nofollow" />
   </head>
 
   <!-- set what displays onto the main browser window -->
@@ -32,7 +40,7 @@
     <p>Both types can be cited, but q tag <b>does not</b> work in Explorer.</p>
     <p>You can use an acronym/abbreviation,
       like <abbr title="Professor">Prof</abbr>, if you like.</p>
-    <p>You can reference a book, like <cite>HTML & CSS</cite>, with cite.</p>
+    <p>You can reference a book, like <cite>HTML &amp; CSS</cite>, with cite.</p>
     <p>You can note something's <dfn>defining instance</dfn>, or the first time
       you mention something that requires definition, with dfn.</p>
     <p>I can signify content that has been <del>removed</del> deleted, as well
@@ -237,6 +245,26 @@
         <label>Enter search term: <input type="search" name="search" placeholder="Enter term here..." /></label>
       </p>
     </form>
+
+    <p><hr /></p>
+
+    <!-- section on extra markup tags -->
+    <h2>There are various extra tags that can be used to different effects.</h2>
+    <p>You can use the iframe tag to place another webpage within your webpage.</p><br />
+    <iframe
+      width="1000"
+      height="500"
+      src="https://github.com/Proxymoron461/HTML-Learning">
+    </iframe>
+    <br /><p>You can use the seamless attribute to remove any scroll bars.</p><br />
+    <iframe
+      width="1000"
+      height="500"
+      src="https://github.com/Proxymoron461/HTML-Learning"
+      seamless="seamless">
+    </iframe>
+    <br /><p>You can also use escape codes, like &amp; or &pound;, to display different characters.</p>
+    
 
   </body>
 </html>
